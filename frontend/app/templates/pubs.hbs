@@ -1,6 +1,7 @@
 {{#each model as |m|}}
-  Id: {{m.id}}<br>
+  Id: {{link-to m.id 'pub' m.id}}<br>
   Name: {{m.name}}<br>
+
 {{/each}}
 
 {{outlet}}

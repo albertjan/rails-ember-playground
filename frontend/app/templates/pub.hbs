@@ -1,3 +1,7 @@
 {{outlet}}
 {{model.id}}<br>
 {{model.name}}<br>
+{{#each model.fills as |fill|}}
+  Fill at: {{fill.date}}
+  Quantity: {{fill.quantity}}
+{{/each}}

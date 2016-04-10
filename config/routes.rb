@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   mount_ember_app :frontend, to: "/"
 
-  scope "/api" do
+  namespace :api do
     jsonapi_resources :pubs
+    jsonapi_resources :fills
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

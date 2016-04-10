@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160409214005) do
+ActiveRecord::Schema.define(version: 20160410104031) do
+
+  create_table "fills", force: :cascade do |t|
+    t.datetime "date"
+    t.integer  "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "pub_id"
+  end
+
+  add_index "fills", ["pub_id"], name: "index_fills_on_pub_id"
 
   create_table "pubs", force: :cascade do |t|
     t.string   "name"
