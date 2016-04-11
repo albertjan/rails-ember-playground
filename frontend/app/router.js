@@ -6,8 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('pubs', function() {
-  });
+  this.route('pubs');
   this.route('pub', { path: '/pub/:id' });
 });
 

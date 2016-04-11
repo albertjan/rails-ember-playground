@@ -1,7 +1,11 @@
 {{outlet}}
 {{model.id}}<br>
 {{model.name}}<br>
-{{#each model.fills as |fill|}}
-  Fill at: {{fill.date}}
-  Quantity: {{fill.quantity}}
+{{model.tanks}}<br>
+{{model.capacity}}<br>
+<p>
+{{#each model.visits as |visit|}}
+  Fill at: {{visit.date}}<br>
+  Quantity: {{visit.quantity}}<br>
 {{/each}}
+</p>

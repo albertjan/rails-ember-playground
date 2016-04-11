@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     jsonapi_resources :pubs
-    jsonapi_resources :fills
+    jsonapi_resources :visits
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

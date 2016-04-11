@@ -1,3 +1,3 @@
 class Pub < ActiveRecord::Base
-  has_many :fills
+  has_many :visits
 end
